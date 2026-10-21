@@ -13,25 +13,6 @@ Large language models (LLMs) generally lack deep causal reasoning capabilities i
 
 On the **TempoCausal-Bench** benchmark, TCR-Former achieves an accuracy **16.5% higher** than state-of-the-art methods, outperforming large-scale models such as GPT-5.4 and DeepSeek-V3.2 with only ~8.6B parameters.
 
-## Repository Structure
-
-```
-TCR-Former-main/
-├── bench/
-│   ├── TempoCausal-Bench_train.json   # Training set of TempoCausal-Bench
-│   └── TempoCausal-Bench_test.json    # Test set of TempoCausal-Bench
-├── code/
-│   ├── config.py                      # Default model IDs (Qwen3-0.6B encoder / Qwen3-8B decoder) and checkpoint path configs
-│   ├── encoder.py                     # Temporal Causal Encoder 
-│   ├── decoder.py                     # Reasoning Decoder 
-│   ├── pipeline.py                    # End-to-end pipeline including counterfactual intervention target parsing
-│   └── __init__.py
-├── fig/
-│   └── Figure1.png                    # TCR-Former architecture figure
-├── requirements.txt
-└── README.md
-```
-
 ## Code Description
 
 The code implements the **TCR-Former** architecture:
